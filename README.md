@@ -14,6 +14,8 @@ gem install rails
 ```
 rails s
 rails generate controller StaticPages home help
+rails destroy  controller StaticPages home help
+bundle exec rake test
 ```
 http://localhost:3000/
 
