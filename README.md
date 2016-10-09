@@ -27,6 +27,10 @@ git branch
 git checkout master
 git merge modify-README
 git branch -d modify-README
+
+git remote rm origin
+git remote add origin git@github.com:azureberry/myrails.git
+
 ```
 
 
