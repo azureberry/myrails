@@ -14,6 +14,22 @@ gem install rails
 rails s
 ```
 
+```
+git init
+git add -A
+git commit -m "Initialize repository"
+git log
+git push
+
+git checkout -b modify-README
+git branch
+
+git checkout master
+git merge modify-README
+git branch -d modify-README
+```
+
+
 =========================
 
 This README would normally document whatever steps are necessary to get the
