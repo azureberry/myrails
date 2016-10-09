@@ -3,6 +3,7 @@
 * [Ruby](http://http//rubyinstaller.org/)
 * [Development Kit](http://rubyinstaller.org/downloads/)
 * [SQLite3](https://www.sqlite.org/download.html)
+* [heroku](https://devcenter.heroku.com/articles/heroku-command-line)
 
 ```
 gem update --system
@@ -30,7 +31,16 @@ git branch -d modify-README
 
 git remote rm origin
 git remote add origin git@github.com:azureberry/myrails.git
+git config --global push.default matching
+git config --global alias.co checkout
+```
 
+```
+heroku --version
+heroku login
+heroku keys:add
+heroku create
+git push heroku master
 ```
 
 
