@@ -17,7 +17,7 @@ rails s
 ```
 git init
 git add -A
-git commit -m "Initialize repository"
+git commit -a -m "Initialize repository"
 git log
 git push
 
