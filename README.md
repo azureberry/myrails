@@ -13,7 +13,9 @@ gem install rails
 
 ```
 rails s
+rails generate controller StaticPages home help
 ```
+http://localhost:3000/
 
 ```
 git init
