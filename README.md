@@ -19,7 +19,7 @@ git init
 git add -A
 git commit -a -m "Initialize repository"
 git log
-git push
+git push --all
 
 git checkout -b modify-README
 git branch
