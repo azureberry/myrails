@@ -6,7 +6,7 @@
 
 ```
 gem update --system
-gem install bundler
+gem install bundler --without production
 gem install rails
 ```
 
