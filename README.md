@@ -5,19 +5,33 @@
 * [SQLite3](https://www.sqlite.org/download.html)
 * [heroku](https://devcenter.heroku.com/articles/heroku-command-line)
 
+
+* インストール
 ```
 gem update --system
 gem install bundler --without production
 gem install rails
 ```
 
+* Rails
+
 ```
 rails s
 rails generate controller StaticPages home help
 rails destroy  controller StaticPages home help
 bundle exec rake test
+rails generate integration_test site_layout
+bundle exec rake test:integration
+```
+
+
 ```
 http://localhost:3000/
+curl -OL http://railstutorial.jp/rails.png
+$ mv rails.png app/assets/images/
+```
+
+* Git
 
 ```
 git init
@@ -38,6 +52,8 @@ git remote add origin git@github.com:azureberry/myrails.git
 git config --global push.default matching
 git config --global alias.co checkout
 ```
+
+* Heroku
 
 ```
 heroku --version
