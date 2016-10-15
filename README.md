@@ -23,6 +23,13 @@ bundle exec rake test
 rails generate integration_test site_layout
 bundle exec rake test:integration
 rails generate controller Users new
+rails generate model User name:string email:string
+bundle exec rake db:migrate
+rails db:migrate RAILS_ENV=test
+bundle exec rake test:models
+rails generate migration add_index_to_users_email
+rails generate migration \
+add_password_digest_to_users password_digest:string
 ```
 
 
