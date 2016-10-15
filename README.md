@@ -22,6 +22,7 @@ rails destroy  controller StaticPages home help
 bundle exec rake test
 rails generate integration_test site_layout
 bundle exec rake test:integration
+rails generate controller Users new
 ```
 
 
