@@ -30,6 +30,8 @@ bundle exec rake test:models
 rails generate migration add_index_to_users_email
 rails generate migration \
 add_password_digest_to_users password_digest:string
+bundle exec rake db:migrate:reset
+rails generate integration_test users_signup
 ```
 
 
@@ -69,6 +71,7 @@ heroku login
 heroku keys:add
 heroku create
 git push heroku master
+heroku run rake db:migrate
 ```
 
 

@@ -4,8 +4,6 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 
-# Use Puma as the app server
-# gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass'
@@ -25,15 +23,8 @@ gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 # gem 'sdoc',                 '0.4.0', group: :doc
-
-# gem 'bcrypt'
-if Bundler::WINDOWS
-  gem 'bcrypt-ruby', '~> 3.0.0', require: false
-else
-  gem 'bcrypt', '~> 3.1.10', require: false
-end
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -42,6 +33,7 @@ group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
   gem 'byebug', platform: :mri
+  # gem 'byebug'
   gem 'spring'
   gem 'win32console'
 end
@@ -60,6 +52,8 @@ end
 group :production do
   gem 'pg'
   gem 'rails_12factor'
+  # Use Puma as the app server
+  gem 'puma', '~> 3.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
