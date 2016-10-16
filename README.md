@@ -32,6 +32,9 @@ rails generate migration \
 add_password_digest_to_users password_digest:string
 bundle exec rake db:migrate:reset
 rails generate integration_test users_signup
+rails generate controller Sessions new
+rake routes
+rails generate integration_test users_login
 ```
 
 
